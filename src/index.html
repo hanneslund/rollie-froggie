@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<title>Dodgeball</title>
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<style>
+    body {
+        background: #182858;
+        display: grid;
+    }
+</style>
+
+<body>
+    <script src="elm.js"></script>
+    <script>
+        const highscore = Number(localStorage.getItem("highscore"))
+        const app = Elm.Main.fullscreen(highscore)
+        app.ports.saveHighscore.subscribe(
+            highscore => localStorage.setItem("highscore", highscore)
+        )
+    </script>
+</body>
