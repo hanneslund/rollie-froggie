@@ -1,1 +1,1 @@
-elm-live src/Main.elm --output src/elm.js --dir=src
+elm-live Main.elm --output elm.js

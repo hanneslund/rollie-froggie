@@ -11,10 +11,10 @@
 <body>
     <script src="elm.js"></script>
     <script>
-        const highscore = Number(localStorage.getItem("highscore"))
+        const highscore = Number(localStorage.getItem("rfhighscore"))
         const app = Elm.Main.fullscreen(highscore)
         app.ports.saveHighscore.subscribe(
-            highscore => localStorage.setItem("highscore", highscore)
+            highscore => localStorage.setItem("rfhighscore", highscore)
         )
     </script>
 </body>
