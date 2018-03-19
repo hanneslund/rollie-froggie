@@ -1,3 +1,3 @@
-https://hanneslund.github.io/rollie-froggie/
+https://hanneslund.github.io/rolly-froggy/
 
 elm-live Main.elm --output elm.js
